@@ -158,7 +158,7 @@ class Layout2(QMainWindow):
             self.close()
         else:
             Tk().withdraw()
-            messagebox.askokcancel("Error","sootha mooditu ellathaiyum fill pandra dash")
+            messagebox.askokcancel("Error","Login Details are not matched")
 
 # CLass for Layout 3_5
 class Layout3_5(QMainWindow):
@@ -478,11 +478,11 @@ class mainwindow(QMainWindow):
                 return True
             else:
                 Tk().withdraw()
-                messagebox.askretrycancel("ERROR", "WORNG PASSWORD")
+                messagebox.askretrycancel("ERROR", "WRONG PASSWORD")
                 return False
         else:
             Tk().withdraw()
-            messagebox.askokcancel("Error", "veliya po da vadakkans")
+            messagebox.askokcancel("Error", "Login Credentials doesn't match")
 
 if not os.path.exists("Databases/PoliceDB.db"):
     db = Databases()
