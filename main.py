@@ -26,7 +26,7 @@ import face_recognition
 
 # Class for Layout3
 class Layout3(QMainWindow):
-    def __init__(self):
+    def __init__(self):  
         super(Layout3, self).__init__()
         self.ui3 = Ui_layout3()
         self.ui3.setupUi(self)
